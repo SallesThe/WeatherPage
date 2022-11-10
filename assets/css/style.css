@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(89,76,238,1) 0%, #8dd0f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#button-dark-mode {
+    display: flex;
+    position: fixed;
+    top: 4rem;
+    right: 5rem;
+}
+
+#button-dark-mode i {
+    font-size: 2rem;
+    color: #ffbb00;
+    cursor: pointer;
+}
+
+.light-mode {
+    
+}
+
+
+.hide {
+    display: none;
+}
+
+.container {
+    background-color: #5c54ed;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+}
+
+/* FORM */
+
+.form h3 {
+    margin-bottom: 1rem;
+}
+
+.form-input-container {
+    display: flex;
+}
+
+.form input {
+    padding: .8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form button {
+    padding: .8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    color: #fdfdfd;
+    background-color: #8dd0f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#weather-data, 
+#loader {
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#weather-data h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .6rem;
+
+}
+
+#weather-data h2 i {
+    font-size: 1rem;
+}
+
+#weather-data h2 span {
+    margin: .6rem;
+}
+
+#weather-data h2 #country {
+    height: 1rem;
+}
+
+#description-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+}
+
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-container #humidity {
+    border-right: 1px solid #fff;
+    padding: .6rem;
+    margin: .6rem;
+}
+
+#messageError {
+    text-align: center;
+    border-top: 1px solid #fff;
+    margin: 1rem 0;
+}
+
+#messageError p {
+    color: #fdfdfd;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+
+/* Loader */
+#loader i {
+    animation: rotate 1.5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
